@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Menü | Nezih Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+
+  <div id="butonlar">
+    <a href="index.html" class="btn-gönder">Home</a>
+    <a href="iletişim.html" class="btn-gönder">Contact</a>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Cold Drinks</h1>
+    <ul>
+      <li>Iced Tea (Lemon, Peach, Mint)</li>
+      <li>ice Latte / Mocha</li>
+      <li>Lemonade (Freshly Squeezed, Mint)</li>
+      <li>Smoothie (Strawberry, Banana, Green Detox)</li>
+      <li>Carbonated Drinks (Cola, Fanta, Soda, etc.)</li>
+      <li>Mineral Water (Natural / Lemon-Flavored)</li>
+      <li>Water</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Hot Drinks</h1>
+    <ul>
+      <li>Brewed Tea (Rize, Green, Sage, Linden, Earl Grey)</li>
+      <li>Turkish Coffee</li>
+      <li>Espresso / Double Espresso</li>
+      <li>Americano</li>
+      <li>Latte / Vanilla / Caramel</li>
+      <li>Hot Chocolate</li>
+      <li>Salep (Seasonal)</li>
+      <li>Cinnamon Milk</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Desserts</h1>
+    <ul>
+      <li>Cheesecake (Raspberry / Lemon / Caramel)</li>
+      <li>San Sebastian Cheesecake</li>
+      <li>Tiramisu </li>
+      <li>Chocolate Soufflé (with Ice Cream)</li>
+      <li>Brownie / Moist Cake</li>
+      <li>Magnolia (Banana / Strawberry / Oreo)</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Snacks & Toasts</h1>
+    <ul>
+      <li>Mixed Toast (Cheddar, Sausage, Salami, Tomato)</li>
+      <li>Cheese Toast</li>
+      <li>Mini Sandwich Plate (Choice of 3)</li>
+      <li>Cigar Börek (6 pieces, served with sauce)</li>
+      <li>French Fries (Spiced or Plain)</li>
+      <li>Mozzarella Sticks</li>
+      <li>Sausage Plate (Fried, with Barbecue Sauce)</li>
+      <li>Crispy Chicken Pieces</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Light Meals & Salads</h1>
+    <ul>
+      <li>Chicken Caesar Salad</li>
+      <li>Mediterranean Salad (Olives, Cheese, Olive Oil Dressing)</li>
+      <li>Tuna Salad</li>
+      <li>Cafe’s Special Soup of the Day (Seasonal)</li>
+      <li>Mixed Pizza</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Breakfast</h1>
+    <ul>
+      <li>Turkish Breakfast Platter(Serves 2)</li>
+      <li>Breakfast Plate(Serves 1)</li>
+      <li>Menemen / Menemen with Sausage</li>
+      <li>Omelette (Cheese, Vegetable, Sausage)</li>
+      <li>Avocado Spread & Eggs</li>
+      <li>Granola & Yogurt & Fruit</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Nezih Cafe | Tüm Hakları Saklıdır</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const kutular = document.querySelectorAll(".sarikutu");
+
+      kutular.forEach((kutu, index) => {
+        setTimeout(() => {
+          kutu.classList.add("visible");
+        }, index * 300); // Her kutu 300ms arayla görünür
+      });
+    });
+  </script>
+
+</body>
+</html>
