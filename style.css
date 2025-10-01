@@ -1,0 +1,155 @@
+body.index-html {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.sol-arka-plan {
+  width: 50%;
+  background-image: url('pasta.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sag-icerik {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  margin: -50px;
+}
+
+#logo img {
+  width: 250px;
+}
+
+h1, h2, h3, #yazi {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  text-align: center;
+  color: #3c3c3c;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.btn-gönder {
+  background-color: rgb(181, 180, 165);
+  color: black;
+  padding: 12px 24px;
+  border-radius: 35px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-gönder:hover {
+  background-color: rgb(78, 77, 73);
+  color: white;
+}
+
+#butonlar {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.sarikutu, .sarikutu2 {
+  background-color: rgb(181, 180, 165);
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  margin: 30px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sarikutu {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sarikutu.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#foto {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#foto img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: #dad7af;
+  margin-top: 10px;
+}
+
+#tavsiye {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+  body.index-html {
+    flex-direction: column;
+  }
+
+  .sol-arka-plan,
+  .sag-icerik {
+    width: 100%;
+    height: auto;
+  }
+
+  .sol-arka-plan {
+    height: 50vh;
+  }
+
+  #logo img {
+    width: 50%;
+  }
+ 
+  .sarikutu2 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #butonlar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-gönder {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  #foto img {
+    width: 90%;
+  }
+}

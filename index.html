@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Nezih Kafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet"/>
+</head>
+<body class="index-html">
+
+  <div class="sol-arka-plan"></div>
+
+  <div class="sag-icerik">
+    
+    <div id="logo">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <div class="sarikutu2">
+      <h1 id="yazi">Nezih Cafe'ye Hoş Geldiniz!</h1>
+      <p>
+        Nezih Cafe, huzurlu atmosferi ve taze lezzetleriyle sizi bekliyor.
+Güler yüzlü hizmetimizle gününüze neşe katmak için buradayız.
+      </p>
+    </div>
+
+    <div id="butonlar">
+      <a href="menü.html" class="btn-gönder">Menü</a>
+      <a href="iletişim.html" class="btn-gönder">İletişim</a>
+    </div>
+
+    <div class="sarikutu2">
+      <h2 id="tavsiye">Günün Önerisi⭐</h2>
+      <ul>
+        <li>Vanilyalı Latte + Cheesecake → <strong>350tl</strong></li>
+        <li>Brownie + Çay → <strong>200tl</strong></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    const yazi = document.getElementById("tavsiye");
+    let buyuyor = true;
+
+    setInterval(() => {
+      yazi.style.transform = buyuyor ? "scale(1.1)" : "scale(1)";
+      buyuyor = !buyuyor;
+    }, 500);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Menü | Nezih Cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="logo">
+    <a href="index.html">
+      <img src="logo.png" alt="Logo">
+    </a>
+  </div>
+
+  <div id="butonlar">
+    <a href="index.html" class="btn-gönder">Anasayfa</a>
+    <a href="iletişim.html" class="btn-gönder">İletişim</a>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Soğuk İçecekler</h1>
+    <ul>
+      <li>Soğuk Çay (Limon, Şeftali, Nane)</li>
+      <li>Soğuk Latte / Mocha</li>
+      <li>Limonata (Taze Sıkılmış, Naneli)</li>
+      <li>Smoothie (Çilekli, Muzlu, Yeşil Detoks)</li>
+      <li>Gazlı İçecekler (Kola, Fanta, Soda vb.)</li>
+      <li>Maden Suyu (Doğal / Limon Aromalı)</li>
+      <li>Su</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Sıcak İçecekler</h1>
+    <ul>
+      <li>Demleme Çay (Rize, Yeşil, Adaçayı, Ihlamur, Earl Grey)</li>
+      <li>Türk Kahvesi</li>
+      <li>Espresso / Duble Espresso</li>
+      <li>Americano</li>
+      <li>Latte / Vanilyalı / Karamelli</li>
+      <li>Sıcak Çikolata</li>
+      <li>Salep (Mevsimsel)</li>
+      <li>Tarçınlı Süt</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Tatlılar</h1>
+    <ul>
+      <li>Cheesecake (Frambuazlı / Limonlu / Karamelli)</li>
+      <li>San Sebastian Cheesecake</li>
+      <li>Tiramisu</li>
+      <li>Çikolatalı Sufle (Dondurmalı)</li>
+      <li>Brownie / Islak Kek</li>
+      <li>Magnolia (Muzlu / Çilekli / Oreo)</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Atıştırmalıklar & Tostlar</h1>
+    <ul>
+      <li>Karışık Tost (Kaşar, Sucuk, Salam, Domates)</li>
+      <li>Kaşarlı Tost</li>
+      <li>Mini Sandviç Tabağı (3 Adet Seçimlik)</li>
+      <li>Sigara Böreği (6 Adet, Sos ile Servis)</li>
+      <li>Patates Kızartması (Baharatlı veya Sade)</li>
+      <li>Mozzarella Çubukları</li>
+      <li>Sucuk Tabağı (Kızartılmış, Barbekü Soslu)</li>
+      <li>Çıtır Tavuk Parçaları</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Hafif Yemekler & Salatalar</h1>
+    <ul>
+      <li>Tavuklu Sezar Salata</li>
+      <li>Akdeniz Salata (Zeytin, Peynir, Zeytinyağlı Sos)</li>
+      <li>Ton Balıklı Salata</li>
+      <li>Kafenin Günün Çorbası (Mevsimsel)</li>
+      <li>Karışık Pizza</li>
+    </ul>
+  </div>
+
+  <div class="sarikutu center">
+    <h1>Kahvaltı</h1>
+    <ul>
+      <li>Türk Kahvaltı Tabağı (2 Kişilik)</li>
+      <li>Kahvaltı Tabağı (1 Kişilik)</li>
+      <li>Menemen / Sucuklu Menemen</li>
+      <li>Omlet (Peynirli, Sebzeli, Sucuklu)</li>
+      <li>Avokado Ezmesi & Yumurta</li>
+      <li>Granola & Yoğurt & Meyve</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Nezih Kafe | Tüm Hakları Saklıdır</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const kutular = document.querySelectorAll(".sarikutu");
+
+      kutular.forEach((kutu, index) => {
+        setTimeout(() => {
+          kutu.classList.add("visible");
+        }, index * 300); 
+      });
+    });
+  </script>
+
+</body>
+</html>
